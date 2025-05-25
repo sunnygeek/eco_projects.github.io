@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eco Projects PR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles if needed, though Tailwind is preferred */
+        body {
+            font-family: 'Inter', sans-serif; /* Defaulting to Inter as per instructions */
+        }
+        .hero-bg {
+            background-image: url('./solar-492.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #F97316; /* Orange accent */
+        }
+        .service-card:hover .service-icon {
+            transform: translateY(-10px);
+        }
+        .testimonial-bg {
+            background-image: url('https://placehold.co/1920x600/1A202C/FFFFFF?text=Testimonial+BG');
+            background-size: cover;
+            background-position: center;
+        }
+        .blog-card img {
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-orange-500">
+                <i class="fas fa-bolt mr-2"></i>Eco Projects PR
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="hover:text-orange-400 transition duration-300">Home</a>
+                <a href="#about" class="hover:text-orange-400 transition duration-300">About Us</a>
+                <a href="#services" class="hover:text-orange-400 transition duration-300">Services</a>
+                <a href="#blog" class="hover:text-orange-400 transition duration-300">Blog</a>
+                <a href="#contact" class="hover:text-orange-400 transition duration-300">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="hidden md:block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                    Get a Quote
+                </button>
+                <button class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-bg h-[70vh] md:h-[85vh] flex items-center justify-center text-white relative">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Powering a <span class="text-orange-400">Greener</span> Tomorrow
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                We provide innovative and sustainable energy solutions to meet your needs and protect our planet.
+            </p>
+            <div class="space-x-4">
+                <a href="#services" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg text-lg transition duration-300">
+                    Our Services
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold py-2.5 px-6 rounded-lg text-lg transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/3498DB/FFFFFF?text=About+Us+Image" alt="About Us" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <span class="text-orange-500 font-semibold">About Our Company</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-6">
+                        Your Trusted Partner in Energy Solutions
+                    </h2>
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        We are a leading provider of innovative energy solutions, committed to sustainability and customer satisfaction. Our team of experts works tirelessly to deliver cutting-edge technologies and services that power a brighter future.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                            Sustainable and Renewable Energy Sources
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                            Advanced Energy Efficiency Technologies
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                            Expert Consultation and Support
+                        </li>
+                    </ul>
+                    <a href="#" class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 md:mb-16 section-title">
+                <span class="text-orange-500 font-semibold">Our Services</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
+                    What We Offer
+                </h2>
+                <p class="text-gray-600 mt-4 max-w-xl mx-auto">
+                    Explore our comprehensive range of energy services designed to meet diverse needs.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 service-card">
+                    <div class="text-orange-500 text-5xl mb-6 text-center service-icon transition-transform duration-300">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Solar Solutions</h3>
+                    <p class="text-gray-600 mb-4 text-center leading-relaxed">
+                        Harness the power of the sun with our state-of-the-art solar panel installations and maintenance.
+                    </p>
+                    <div class="text-center">
+                        <a href="#" class="text-orange-500 hover:text-orange-600 font-semibold transition duration-300">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 service-card">
+                    <div class="text-orange-500 text-5xl mb-6 text-center service-icon transition-transform duration-300">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Wind Energy</h3>
+                    <p class="text-gray-600 mb-4 text-center leading-relaxed">
+                        Innovative wind turbine solutions for clean and reliable power generation.
+                    </p>
+                     <div class="text-center">
+                        <a href="#" class="text-orange-500 hover:text-orange-600 font-semibold transition duration-300">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 service-card">
+                    <div class="text-orange-500 text-5xl mb-6 text-center service-icon transition-transform duration-300">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Energy Efficiency</h3>
+                    <p class="text-gray-600 mb-4 text-center leading-relaxed">
+                        Optimize your energy consumption with our smart efficiency solutions and audits.
+                    </p>
+                     <div class="text-center">
+                        <a href="#" class="text-orange-500 hover:text-orange-600 font-semibold transition duration-300">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 md:mb-16 section-title">
+                <span class="text-orange-400 font-semibold">Why Choose Us</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">
+                    Driving the Future of Energy
+                </h2>
+                 <p class="text-gray-300 mt-4 max-w-xl mx-auto">
+                    We stand out for our commitment to innovation, reliability, and customer satisfaction.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cogs text-orange-400 text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold">Innovative Technology</h3>
+                    </div>
+                    <p class="text-gray-300">We leverage the latest advancements to provide superior energy solutions.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-orange-400 text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold">Eco-Friendly Focus</h3>
+                    </div>
+                    <p class="text-gray-300">Our commitment to sustainability helps protect the environment for future generations.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-headset text-orange-400 text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold">24/7 Support</h3>
+                    </div>
+                    <p class="text-gray-300">Dedicated customer support available around the clock to assist you.</p>
+                </div>
+                 <div class="bg-gray-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-medal text-orange-400 text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold">Proven Expertise</h3>
+                    </div>
+                    <p class="text-gray-300">Years of experience and a track record of successful projects.</p>
+                </div>
+                 <div class="bg-gray-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-orange-400 text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold">Cost Effective</h3>
+                    </div>
+                    <p class="text-gray-300">Optimized solutions that provide long-term savings and value.</p>
+                </div>
+                 <div class="bg-gray-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-orange-400 text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold">Reliable & Safe</h3>
+                    </div>
+                    <p class="text-gray-300">Prioritizing safety and reliability in all our installations and services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 testimonial-bg text-white relative">
+        <div class="absolute inset-0 bg-gray-900 opacity-80"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12 md:mb-16 section-title">
+                <span class="text-orange-400 font-semibold">Client Testimonials</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">
+                    What Our Clients Say
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 bg-opacity-70 p-8 rounded-lg shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <img src="https://placehold.co/80x80/FFA500/FFFFFF?text=Client1" alt="Client 1" class="w-20 h-20 rounded-full mr-6 border-2 border-orange-400">
+                        <div>
+                            <h4 class="text-xl font-semibold">Jane Doe</h4>
+                            <p class="text-orange-300">CEO, Tech Solutions Inc.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic leading-relaxed">
+                        "Working with EnergyCo has been a game-changer for our company. Their solar solutions have significantly reduced our energy costs and carbon footprint. Highly recommended!"
+                    </p>
+                </div>
+                <div class="bg-gray-800 bg-opacity-70 p-8 rounded-lg shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <img src="https://placehold.co/80x80/3498DB/FFFFFF?text=Client2" alt="Client 2" class="w-20 h-20 rounded-full mr-6 border-2 border-orange-400">
+                        <div>
+                            <h4 class="text-xl font-semibold">John Smith</h4>
+                            <p class="text-orange-300">Operations Manager, Green Farms</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic leading-relaxed">
+                        "The team at EnergyCo provided exceptional service and expertise for our wind energy project. Their professionalism and commitment to quality were outstanding."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 md:mb-16 section-title">
+                <span class="text-orange-500 font-semibold">Our Blog</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
+                    Latest News & Articles
+                </h2>
+                 <p class="text-gray-600 mt-4 max-w-xl mx-auto">
+                    Stay updated with the latest trends, insights, and news in the energy sector.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden blog-card">
+                    <a href="#">
+                        <img src="https://placehold.co/600x400/2ECC71/FFFFFF?text=Blog+Post+1" alt="Blog Post 1" class="w-full h-56 object-cover">
+                    </a>
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-sm text-orange-500 font-semibold">May 20, 2025</span>
+                            <span class="mx-2 text-gray-400">|</span>
+                            <span class="text-sm text-gray-500">Renewable Energy</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3 hover:text-orange-500 transition duration-300">
+                            <a href="#">The Future of Solar Panel Technology</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Discover the upcoming advancements in solar technology and how they will shape the future...
+                        </p>
+                        <a href="#" class="text-orange-500 hover:text-orange-600 font-semibold transition duration-300">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden blog-card">
+                     <a href="#">
+                        <img src="https://placehold.co/600x400/3498DB/FFFFFF?text=Blog+Post+2" alt="Blog Post 2" class="w-full h-56 object-cover">
+                    </a>
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-sm text-orange-500 font-semibold">May 15, 2025</span>
+                            <span class="mx-2 text-gray-400">|</span>
+                            <span class="text-sm text-gray-500">Energy Saving</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3 hover:text-orange-500 transition duration-300">
+                             <a href="#">Top 5 Tips for Reducing Energy Bills</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Learn practical tips to lower your energy consumption and save money on your utility bills...
+                        </p>
+                        <a href="#" class="text-orange-500 hover:text-orange-600 font-semibold transition duration-300">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden blog-card">
+                     <a href="#">
+                        <img src="https://placehold.co/600x400/E74C3C/FFFFFF?text=Blog+Post+3" alt="Blog Post 3" class="w-full h-56 object-cover">
+                    </a>
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-sm text-orange-500 font-semibold">May 10, 2025</span>
+                            <span class="mx-2 text-gray-400">|</span>
+                            <span class="text-sm text-gray-500">Wind Power</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3 hover:text-orange-500 transition duration-300">
+                             <a href="#">Advancements in Wind Turbine Efficiency</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Exploring the latest innovations making wind turbines more efficient and powerful...
+                        </p>
+                        <a href="#" class="text-orange-500 hover:text-orange-600 font-semibold transition duration-300">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-orange-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Switch to Sustainable Energy?
+            </h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Contact us today for a free consultation and let our experts guide you towards a greener future.
+            </p>
+            <a href="mailto:info@energyco.com" class="bg-white hover:bg-gray-100 text-orange-500 font-bold py-4 px-10 rounded-lg text-lg transition duration-300 shadow-md">
+                Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h5 class="text-xl font-semibold text-white mb-4">
+                       <i class="fas fa-bolt text-orange-400 mr-2"></i>EnergyCo
+                    </h5>
+                    <p class="text-sm leading-relaxed">
+                        Providing innovative and sustainable energy solutions for a brighter, greener future. Our commitment is to quality, reliability, and customer satisfaction.
+                    </p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="text-xl font-semibold text-white mb-4">Quick Links</h5>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="hover:text-orange-400 transition duration-300">About Us</a></li>
+                        <li><a href="#services" class="hover:text-orange-400 transition duration-300">Services</a></li>
+                        <li><a href="#blog" class="hover:text-orange-400 transition duration-300">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-orange-400 transition duration-300">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition duration-300">FAQ</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition duration-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-xl font-semibold text-white mb-4">Our Services</h5>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-orange-400 transition duration-300">Solar Panel Installation</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition duration-300">Wind Turbine Solutions</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition duration-300">Energy Audits</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition duration-300">Efficiency Upgrades</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition duration-300">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-xl font-semibold text-white mb-4">Contact Us</h5>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-orange-400 mt-1 mr-3"></i>
+                            <span>123 Energy Drive, Green City, ECO 45678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-orange-400 mr-3"></i>
+                            <a href="tel:+1234567890" class="hover:text-orange-400 transition duration-300">(123) 456-7890</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-orange-400 mr-3"></i>
+                            <a href="mailto:info@energyco.com" class="hover:text-orange-400 transition duration-300">info@energyco.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; <span id="currentYear"></span> Eco Projects PR - All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top"
+        class="hidden fixed bottom-8 right-8 bg-orange-500 hover:bg-orange-600 text-white w-12 h-12 rounded-full shadow-lg transition-opacity duration-300 z-50 items-center justify-center text-xl">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Update current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "flex"; // Use flex to align icon
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // Simple mobile menu toggle (basic example)
+        const menuButton = document.querySelector('header button.md\\:hidden');
+        const navMenu = document.querySelector('header nav');
+        if (menuButton && navMenu) {
+            menuButton.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('absolute');
+                navMenu.classList.toggle('top-16');
+                navMenu.classList.toggle('left-0');
+                navMenu.classList.toggle('right-0');
+                navMenu.classList.toggle('bg-gray-900');
+                navMenu.classList.toggle('p-4');
+                navMenu.classList.toggle('flex-col');
+                navMenu.classList.toggle('space-y-2');
+                navMenu.classList.toggle('items-start');
+
+            });
+        }
+    </script>
+
+</body>
+</html>
